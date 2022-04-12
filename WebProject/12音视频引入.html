@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- audio标签引入外部音频（ 属于一个替换元素）：
+        Tips：音视频文件引入之后，默认时不允许用户自己控制的
+            如果需要自己控制，需要加入controls属性
+        属性：
+            controls属性：不需要赋值
+            autoplay属性：音频文件自动播放（目前大部分网站不支持该属性），不需赋值
+            loop属性：循环播放，仍不需要赋值
+
+     -->
+    <audio src="">音频引入</audio>
+    <!-- 一般情况下会通过css和js进行播放器格式统一 -->
+    <audio controls>
+        <!-- 也可以使用source进行路径规定 -->
+        <source src="">
+        <!-- source为自结束标签，也可以多个叠加 -->
+    </audio>
+    <!-- embed是针对老版本的浏览器，且会自动播放，只会自动播放
+            属性：
+                type属性是指定文件格式（audio/mp3） -->
+    <embed src="" type="audio/mp3">
+    <!-- 视频引入采用video标签：
+            属性
+                controls属性
+                src属性
+            使用方式和audio基本相同  
+        同样使用embed进行浏览器兼容（src和type）-->
+    <!-- 一般情况下不会使用将音视频放在本地
+            会浪费服务器资源，
+            目前对于音视频的引用主要有两种方法：
+                使用专门进行音视频托管的服务器，费用较低啊
+                直接使用ifstream直接引入相应网站的音视频，体验不好 -->
+</body>
+</html>
